@@ -366,7 +366,7 @@ const waitForEmail = async () => {
  reasoning: step.reasoning || [],
  artifacts: step.artifacts || []
  });
- await updateProcessListStatus(PROCESS_ID, "Needs Review", "All requests resolved — email sent to PA");
+ await updateProcessListStatus(PROCESS_ID, "Done", "All requests resolved — email sent to PA");
  await delay(1500);
  } else {
  // Normal step: success
@@ -377,7 +377,7 @@ const waitForEmail = async () => {
  reasoning: step.reasoning || [],
  artifacts: step.artifacts || []
  });
- await updateProcessListStatus(PROCESS_ID, isFinal ? "Needs Review" : "In Progress", step.title_s);
+ await updateProcessListStatus(PROCESS_ID, isFinal ? "Done" : "In Progress", step.title_s);
  await delay(1500);
  }
  }

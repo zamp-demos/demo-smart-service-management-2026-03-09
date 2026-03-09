@@ -402,7 +402,7 @@ const waitForSignal = async (signalKey) => {
  await delay(1500);
  }
 
- // Final status: Needs Attention (NOT Done — this is an exception flow)
- await updateProcessListStatus(PROCESS_ID, "Needs Attention", "Fraud alert escalated — card held, Fraud Ops notified");
- console.log(`${PROCESS_ID}: ${CASE_NAME} — complete (Needs Attention).`);
+ // Final status: Done
+ await updateProcessListStatus(PROCESS_ID, "Done", "Fraud alert escalated — card held, Fraud Ops notified");
+ console.log(`${PROCESS_ID}: ${CASE_NAME} — complete (Done).`);
 })();
