@@ -93,13 +93,13 @@ const ChatMessage = ({ msg, suggestions, onSuggestionClick }) => {
             <div className="flex gap-3 w-full">
                 <div className={`w-7 h-7 rounded flex items-center justify-center flex-shrink-0 mt-0.5 ${isUser ? 'bg-[#FFE2D1]' : 'bg-[#2445ff]'}`}>
                     {isUser ? (
-                        <span className="text-[#AF521F] text-[11px] font-bold font-sans">V</span>
+                        <span className="text-[#AF521F] text-[11px] font-bold font-sans">U</span>
                     ) : (
                         <img src="/adam-icon.svg" alt="Pace" className="w-4 h-4 invert brightness-0" />
                     )}
                 </div>
                 <div className="flex flex-col gap-1 flex-1 min-w-0">
-                    <span className="text-[13px] font-semibold text-[#171717]">{isUser ? 'Vignesh' : 'Pace'}</span>
+                    <span className="text-[13px] font-semibold text-[#171717]">{isUser ? 'Umashankar' : 'Pace'}</span>
                     <div className="text-[13px] text-[#3a3a3a] leading-[1.7] break-words whitespace-pre-wrap">
                         {msg.content}
                     </div>

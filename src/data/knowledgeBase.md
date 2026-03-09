@@ -1,11 +1,5 @@
-# HSBC Commercial Cards — Pace Intelligent Case Resolution
-## Service Manager Knowledge Base
+# HSBC Commercial Cards — Smart Service Management
 
-**Classification:** Internal — Confidential — Demo Environment
-**Version:** 1.0
-**Prepared by:** Zamp (Varni Labs Pte. Ltd.)
-**Date:** 2026-03-09
-**Purpose:** This knowledge base is the authoritative reference for the Pace Service Manager assistant. It contains complete case data, system knowledge, policy rules, entity records, and a comprehensive Q&A thread library. The code generation agent must use this document to hard-code all question-and-answer pairs in the SM chat interface.
 
 ---
 
@@ -39,9 +33,9 @@ This document is the single authoritative reference for the Pace SM Assistant �
 
 The SM Assistant is not a general chatbot. It is a precision tool grounded entirely in this knowledge base and the live case data it references. Every answer the SM Assistant gives must be traceable to a specific case record, system output, policy rule, or regulatory provision contained in this document.
 
-### 1.2 How the Codegen Agent Should Use This File
+### 1.2 How Pace Should Use This File
 
-The codegen agent must read this entire document and use it to:
+Pace must read this entire document and use it to:
 
 - Hard-code all factual Q&A pairs in Section 12–15 as pre-built responses in the SM chat interface
 - Use the case records in Sections 6–8 as the data layer behind all case-specific questions
@@ -1120,7 +1114,7 @@ This entry will be reviewed and potentially revised if:
 
 ## 12. SM Q&A Thread Library — Case 1
 
-> **Codegen instruction:** Every Q&A pair below is a hard-coded response in the SM chat interface. Questions are shown in user format; answers are shown as the Pace SM Assistant response. Thread groupings indicate related follow-up questions that should be surfaced as suggestions after the primary answer is given.
+> **Pace instruction:** Every Q&A pair below is a hard-coded response in the SM chat interface. Questions are shown in user format; answers are shown as the Pace SM Assistant response. Thread groupings indicate related follow-up questions that should be surfaced as suggestions after the primary answer is given.
 
 ---
 
