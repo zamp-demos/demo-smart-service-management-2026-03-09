@@ -157,7 +157,10 @@ const server = http.createServer(async (req, res) => {
                 fs.writeFileSync(FEEDBACK_QUEUE_PATH, '[]');
                 fs.writeFileSync(KB_VERSIONS_PATH, '[]');
 
-                const scripts = [{ file: 'SSM_001.cjs', id: 'CSC-2026-0309-AON-0847' }];
+                const scripts = [
+                    { file: 'SSM_001.cjs', id: 'CSC-2026-0309-AON-0847' },
+                    { file: 'SSM_002.cjs', id: 'CSC-2026-0309-CC-0291' }
+                ];
                 let totalDelay = 0;
                 scripts.forEach((script) => {
                     setTimeout(() => {
@@ -430,6 +433,25 @@ const server = http.createServer(async (req, res) => {
     }
 });
 
+
 server.listen(PORT, '0.0.0.0', () => {
     console.log(`HSBC Smart Service Management server running on port ${PORT}`);
+    // Auto-run simulations on startup so dashboard has data immediately
+    const startupScripts = [
+        { file: 'SSM_001.cjs', id: 'CSC-2026-0309-AON-0847' },
+        { file: 'SSM_002.cjs', id: 'CSC-2026-0309-CC-0291' }
+    ];
+    let delay = 0;
+    startupScripts.forEach(script => {
+        setTimeout(() => {
+            const scriptPath = path.join(__dirname, 'simulation_scripts', script.file);
+            const child = exec(`node "${scriptPath}" > "${scriptPath}.log" 2>&1`, (error) => {
+                if (error && error.code !== 0) console.error(`${script.file} startup error:`, error.message);
+                runningProcesses.delete(script.id);
+            });
+            runningProcesses.set(script.id, child);
+            console.log(`Auto-started ${script.file}`);
+        }, delay * 1000);
+        delay += 2;
+    });
 });
