@@ -91,30 +91,11 @@ const waitForEmail = async () => {
     writeJson(path.join(PUBLIC_DATA_DIR, `process_${PROCESS_ID}.json`), {
         logs: [],
         keyDetails: {
-            "Case ID": "CSC-2026-0309-AON-0847",
             "Client": "Aon plc (UK)",
-            "Programme Account": "AON-UK-CC-0047",
-            "PA Name": "Rachel Griffiths",
-            "PA Email": "rachel.griffiths@aon.com",
-            "SM Assigned": "David Mensah, Senior Card Consultant",
-            "Cardholder": "Sophia Chen, Managing Director — Strategic Advisory",
-            "Card (Last 4)": "••••4421",
-            "Card Type": "Corporate Card",
-            "Request 1": "Decline investigation — Marina Bay Sands, Singapore",
-            "Request 2": "Q1 2026 spend breakdown for internal audit",
-            "Request 3": "Temporary limit increase GBP 25,000 → GBP 35,000",
-            "Decline Code": "57 — Geographic restriction",
-            "Limit Requested": "GBP 35,000 (within GBP 40,000 auto-approve ceiling)",
-            "Travel Regions Activated": "Singapore (SGP), Japan (JPN), Hong Kong (HKG)",
-            "Smart Data Access Ref": "SD-DDR-2026-0309-AON047",
-            "Smart Data Approval By": "P. Nair, Aon Global Smart Data Admin",
-            "Spend Report Period": "Q1 2026 (Jan–Mar)",
-            "Spend Total": "GBP 21,480.60 across 84 transactions",
-            "Travel Reference": "TRV-2026-0309-44211",
-            "Limit Change Reference": "LIM-2026-0309-44212",
-            "SLA Tier": "Priority",
-            "Total Elapsed": "18 min 04 sec (incl. 6 min 13 sec waiting for Smart Data access approval)",
-            "Status": "Done"
+            "Cardholder": "Sophia Chen ••••4421",
+            "Programme": "AON-UK-CC-0047",
+            "SM Assigned": "David Mensah",
+            "SLA Tier": "Priority"
         }
     });
 

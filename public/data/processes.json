@@ -1,31 +1,38 @@
 [
-  {
-    "id": "CSC-2026-0309-AON-0847",
-    "name": "Three Requests in One Email",
-    "category": "Smart Service Management",
-    "stockId": "CSC-2026-0309-AON-0847",
-    "year": "2026-03-09",
-    "client": "Aon plc (UK)",
-    "pa": "Rachel Griffiths",
-    "cardLast4": "4421",
-    "process": "PA Email — Multi-Request Resolution",
-    "pathway": "Decline Investigation → Travel Activation → Limit Increase → Spend Data",
-    "status": "Needs Attention"
-  },
-  {
-    "id": "SSM_002",
-    "name": "Case 2 Placeholder",
-    "category": "Smart Service Management",
-    "stockId": "SSM_002",
-    "year": "2026",
-    "status": "Needs Attention"
-  },
-  {
-    "id": "SSM_003",
-    "name": "Case 3 Placeholder",
-    "category": "Smart Service Management",
-    "stockId": "SSM_003",
-    "year": "2026",
-    "status": "Needs Attention"
-  }
+    {
+        "id": "CSC-2026-0309-AON-0847",
+        "name": "Three Requests in One Email",
+        "category": "Smart Service Management",
+        "stockId": "CSC-2026-0309-AON-0847",
+        "status": "Needs Attention",
+        "client": "Aon plc (UK)",
+        "cardholder": "Sophia Chen",
+        "process": "PA Email \u2014 Multi-Request Resolution",
+        "sm": "David Mensah",
+        "pathway": "Decline Investigation \u2192 Travel Activation \u2192 Limit Increase \u2192 Spend Data"
+    },
+    {
+        "id": "SSM_002",
+        "name": "Case 2 Placeholder",
+        "category": "Smart Service Management",
+        "stockId": "SSM_002",
+        "status": "Needs Attention",
+        "client": "\u2014",
+        "cardholder": "\u2014",
+        "process": "\u2014",
+        "sm": "\u2014",
+        "pathway": "\u2014"
+    },
+    {
+        "id": "SSM_003",
+        "name": "Case 3 Placeholder",
+        "category": "Smart Service Management",
+        "stockId": "SSM_003",
+        "status": "Needs Attention",
+        "client": "\u2014",
+        "cardholder": "\u2014",
+        "process": "\u2014",
+        "sm": "\u2014",
+        "pathway": "\u2014"
+    }
 ]
