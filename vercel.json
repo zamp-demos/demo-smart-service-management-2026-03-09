@@ -1,5 +1,2 @@
 {
-    "rewrites": [
-        { "source": "/((?!data/).*)", "destination": "/index.html" }
-    ]
 }
