@@ -71,7 +71,7 @@ const ProcessList = ({ category = 'Data Integrity Review' }) => {
         { label: 'Case ID', key: 'stockId' },
         { label: 'Client', key: 'client' },
         { label: 'Cardholder', key: 'cardholder' },
-        { label: 'Process', key: 'process' },
+        { label: 'Service Request', key: 'process' },
         { label: 'SM Assigned', key: 'sm' }
     ];
 

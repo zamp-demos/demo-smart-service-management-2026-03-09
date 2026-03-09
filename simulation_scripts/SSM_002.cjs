@@ -83,8 +83,7 @@ const waitForSignal = async (signalKey) => {
  "Cardholder": "Richard Okafor ••••7732",
  "Programme": "CC-PROG-UK-0112",
  "SM Assigned": "Sarah Okonkwo",
- "SLA Tier": "Priority"
- }
+  }
  });
 
  await updateProcessListStatus(PROCESS_ID, "In Progress", "Inbound email received — beginning triage");
@@ -121,7 +120,7 @@ const waitForSignal = async (signalKey) => {
  reasoning: [
  "CRM query for james.holroyd@cliffordchance.com returned verified PA record.",
  "Programme CC-PROG-UK-0112 confirmed — Clifford Chance LLP.",
- "SM assigned: Sarah Okonkwo. SLA tier: Priority.",
+ "SM assigned: Sarah Okonkwo.",
  "Cardholder Richard Okafor, Head of Technology, P-Card ****7732, status: active.",
  "Programme policy POL-CC-UK-2026 loaded — SM approval required for limit amendments between GBP 35,001 and GBP 60,000."
  ],

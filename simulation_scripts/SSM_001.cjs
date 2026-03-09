@@ -95,8 +95,7 @@ const waitForEmail = async () => {
  "Cardholder": "Sophia Chen ••••4421",
  "Programme": "AON-UK-CC-0047",
  "SM Assigned": "David Mensah",
- "SLA Tier": "Priority"
- }
+  }
  });
 
  const steps = [
@@ -131,7 +130,7 @@ const waitForEmail = async () => {
  reasoning: [
  "Pace queried the HSBC CRM system for the sender (rachel.griffiths@aon.com).",
  "PA identity confirmed: Rachel Griffiths, Commercial Cards Programme Administrator, Aon plc (UK).",
- "Programme account retrieved: AON-UK-CC-0047. SM assigned: David Mensah. SLA tier: Priority. Preferred response format: formatted email with attachment.",
+ "Programme account retrieved: AON-UK-CC-0047. SM assigned: David Mensah. Preferred response format: formatted email with attachment.",
  "Cardholder record located: Sophia Chen, Managing Director — Strategic Advisory, card ****4421, active, no prior open cases.",
  "Programme policy loaded: POL-AON-UK-2026. All three requests validated against policy scope before investigation begins."
  ],
@@ -277,13 +276,12 @@ const waitForEmail = async () => {
  },
  {
  id: "step-8",
- title_p: "Logging case to CRM and confirming SLA compliance...",
- title_s: "Case Logged & SLA Confirmed",
+ title_p: "Logging case to CRM and confirming resolution...",
+ title_s: "Case Logged & Closed",
  reasoning: [
  "Pace logged the completed case to the HSBC CRM system with a full action summary across all three requests.",
  "CRM case CSC-2026-0309-AON-0847 updated: travel activation (TRV-2026-0309-44211), limit change (LIM-2026-0309-44212), Smart Data report generated and attached.",
- "SLA status confirmed: within Priority window. No escalation required.",
- "SM David Mensah flagged for review — all three requests resolved, response ready for approval and send."
+  "SM David Mensah flagged for review — all three requests resolved, response ready for approval and send."
  ],
  artifacts: [{
  id: "art-08",

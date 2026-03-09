@@ -95,8 +95,7 @@ const waitForEmail = async () => {
    "Cardholder": "Eleanor Whitfield-Osei \u2022\u2022\u2022\u20222847",
    "Programme": "HSF-PROG-UK-0089",
    "SM Assigned": "David Mensah",
-   "SLA Tier": "Standard"
-  }
+     }
  });
 
  const steps = [
@@ -132,7 +131,7 @@ const waitForEmail = async () => {
    reasoning: [
     "Pace queried the HSBC CRM system for the sender (priya.nair@hsf.com).",
     "PA identity confirmed: Priya Nair, Commercial Cards Programme Administrator, Herbert Smith Freehills LLP.",
-    "Programme account retrieved: HSF-PROG-UK-0089. SM assigned: David Mensah. SLA tier: Standard. Preferred response format: plain email.",
+    "Programme account retrieved: HSF-PROG-UK-0089. SM assigned: David Mensah. Preferred response format: plain email.",
     "Cardholder record located: Eleanor Whitfield-Osei, Senior Associate -- Corporate Finance, card ****2847, active, no prior name change recorded.",
     "Name change request type confirmed -- document ingestion required before any system lookup or action."
    ],
