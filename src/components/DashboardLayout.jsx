@@ -22,7 +22,8 @@ import {
     Sun,
     Square,
     Check,
-    Scale
+    Scale,
+    Sparkles
 } from 'lucide-react';
 import FeedbackModal from './FeedbackModal';
 import FeedbackQueuePanel from './FeedbackQueuePanel';
@@ -189,6 +190,12 @@ const DashboardLayout = () => {
                             <span className="text-[12px] font-[550] text-[#8f8f8f]">Pages</span>
                             <Plus size={14} className="text-[#cacaca] cursor-pointer hover:text-[#8f8f8f]" />
                         </div>
+                        <SidebarItem
+                            to="/done/insights"
+                            icon={<Sparkles />}
+                            label="Insights"
+                            isActive={location.pathname.includes('insights')}
+                        />
                     </div>
                 </nav>
 
@@ -232,7 +239,12 @@ const DashboardLayout = () => {
                     {/* Left: Title / Breadcrumb */}
                     <div className={`flex items-center gap-3 transition-opacity duration-150 ${!isSidebarOpen ? 'pl-8' : ''}`}>
                         <div className="flex items-center gap-2 text-[13px]">
-                            {location.pathname.includes('/knowledge-base') ? (
+                            {location.pathname.includes('/insights') ? (
+                                <>
+                                    <Sparkles className="w-3.5 h-3.5 text-[#171717]" />
+                                    <span className="text-[#171717] font-[550]">Insights</span>
+                                </>
+                            ) : location.pathname.includes('/knowledge-base') ? (
                                 <>
                                     <button onClick={() => navigate('/done/smart-service-management')} className="hover:bg-white rounded p-1 transition-colors">
                                         <ArrowLeft className="w-3.5 h-3.5 text-[#171717]" />

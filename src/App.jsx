@@ -5,6 +5,7 @@ import ProcessList from './components/ProcessList';
 import ProcessDetails from './components/ProcessDetails';
 import KnowledgeBase from './components/KnowledgeBase';
 import PeoplePage from './components/People';
+import Insights from './components/Insights';
 import Login from './components/Login';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <ProcessList key="dispute-resolution" title="Dispute Resolution" category="Dispute Resolution" />
           } />
           <Route path="knowledge-base" element={<KnowledgeBase />} />
+          <Route path="insights" element={<Insights />} />
           <Route path="people" element={<PeoplePage />} />
           <Route path="process/:id" element={<ProcessDetails />} />
         </Route>
