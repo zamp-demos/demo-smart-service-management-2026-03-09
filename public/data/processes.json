@@ -46,5 +46,25 @@
     "process": "PA Email \u2014 Chargeback Filing (Hotel Cancellation)",
     "sm": "David Mensah",
     "pathway": "Dispute Intake \u2192 Reason Code Assessment \u2192 Evidence Assembly \u2192 MDR Filing \u2192 Merchant Accepts"
+  },
+  {
+    "id": "CB-2026-0315-LNK-0082",
+    "title": "Linklaters \u2014 Duplicate Adobe charge on \u00b7\u00b7\u00b7\u00b73874",
+    "category": "Dispute Resolution",
+    "assignee": "Sarah Okonkwo",
+    "status": "Done",
+    "currentStatus": "Resolved in HSBC\u2019s Favour",
+    "createdAt": "2026-03-15T10:41:08Z",
+    "updatedAt": "2026-03-26T09:17:00Z",
+    "caseDetails": {
+      "client": "Linklaters LLP",
+      "programme": "LNK-PROG-UK-0019",
+      "cardholder": "Amara Diallo",
+      "cardLast4": "3874",
+      "merchant": "Adobe Systems Europe Ltd",
+      "amount": "GBP 4,180.00",
+      "reasonCode": "4834 \u2014 Duplicate Processing",
+      "mdrRef": "MC-2026-031-0194423"
+    }
   }
 ]
