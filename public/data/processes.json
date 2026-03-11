@@ -34,5 +34,17 @@
     "process": "PA Email \u2014 Cardholder Name Change (Identity Chain)",
     "sm": "David Mensah",
     "pathway": "Email Received \u2192 Marriage Cert Extracted \u2192 MiVision Cross-Ref \u2192 Discrepancy \u2192 Doc Request \u2192 Passport Received \u2192 Identity Chain Validated \u2192 Name Changed \u2192 Replacement Card"
+  },
+  {
+    "id": "CB-2026-0302-WPP-0114",
+    "name": "Hotel Cancellation \u2014 Full Amount Recovered via Mastercard 4853",
+    "category": "Dispute Resolution",
+    "stockId": "CB-2026-0302-WPP-0114",
+    "status": "In Progress",
+    "client": "WPP plc (UK)",
+    "cardholder": "Marcus Webb",
+    "process": "PA Email \u2014 Chargeback Filing (Hotel Cancellation)",
+    "sm": "David Mensah",
+    "pathway": "Dispute Intake \u2192 Reason Code Assessment \u2192 Evidence Assembly \u2192 MDR Filing \u2192 Merchant Accepts"
   }
 ]
