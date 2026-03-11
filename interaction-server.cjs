@@ -143,13 +143,37 @@ const server = http.createServer(async (req, res) => {
                         process: "PA Email — Document Ingestion & Identity Chain Validation",
                         sm: "David Mensah",
                         pathway: "Email Received → Marriage Cert Extracted → MiVision Cross-Ref → Discrepancy → Doc Request → Passport Received → Identity Chain Validated → Name Changed → Replacement Card"
+                    },
+                    {
+                        id: "CB-2026-0302-WPP-0114",
+                        name: "Hotel Cancellation — Full Amount Recovered via Mastercard 4853",
+                        category: "Dispute Resolution",
+                        stockId: "CB-2026-0302-WPP-0114",
+                        status: "In Progress",
+                        client: "WPP plc (UK)",
+                        cardholder: "Marcus Webb",
+                        process: "PA Email — Chargeback Filing (Hotel Cancellation)",
+                        sm: "David Mensah",
+                        pathway: "Dispute Intake → Reason Code Assessment → Evidence Assembly → MDR Filing → Merchant Accepts"
+                    },
+                    {
+                        id: "CB-2026-0315-LNK-0082",
+                        name: "Linklaters — Duplicate Adobe charge on ····3874",
+                        category: "Dispute Resolution",
+                        stockId: "CB-2026-0315-LNK-0082",
+                        status: "In Progress",
+                        client: "Linklaters LLP",
+                        cardholder: "Amara Diallo",
+                        process: "Duplicate Charge — Chargeback Filing (Adobe Systems)",
+                        sm: "Sarah Okonkwo",
+                        pathway: "Dispute Intake → Duplicate Confirmed → Evidence Assembly → MDR Filing → Merchant Accepts"
                     }
                 ];
                 fs.writeFileSync(PROCESSES_FILE, JSON.stringify(cases, null, 4));
 
                 // Reset process log files
                 const emptyLog = JSON.stringify({ logs: [], keyDetails: {} }, null, 4);
-                ["CSC-2026-0309-AON-0847", "CSC-2026-0309-CC-0291", "CSC-2026-0309-HSF-0314"].forEach(id => {
+                ["CSC-2026-0309-AON-0847", "CSC-2026-0309-CC-0291", "CSC-2026-0309-HSF-0314", "CB-2026-0302-WPP-0114"].forEach(id => {
                     const f = path.join(DATA_DIR, `process_${id}.json`);
                     if (fs.existsSync(f)) fs.writeFileSync(f, emptyLog);
                 });
@@ -173,7 +197,7 @@ const server = http.createServer(async (req, res) => {
                         );
                         runningProcesses.set(file, child);
                     }, totalDelay * 1000);
-                    totalDelay += 2;
+                    totalDelay += 4;
                 });
             }, 1000);
         });
@@ -453,6 +477,6 @@ server.listen(PORT, '0.0.0.0', () => {
             runningProcesses.set(file, child);
             console.log(`Auto-started ${file}`);
         }, delay * 1000);
-        delay += 2;
+        delay += 4;
     });
 });
